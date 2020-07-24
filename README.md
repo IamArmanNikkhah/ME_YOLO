@@ -1,13 +1,14 @@
 # ME_YOLO
 Customization of YOLO(you only look once) algorithm + state of art loss function(GIOU) for object detection
 
-**YOLO** 
+-**YOLO** 
 
 came on the computer vision scene with the seminal 2015 paper by Joseph Redmon et al. “You Only Look Once: Unified, Real-Time Object Detection,” and immediately got a lot of attention by fellow computer vision researchers.YOLO is a clever convolutional neural network (CNN) for doing object detection in real-time. The algorithm applies a single neural network to the full image, and then divides the image into regions and predicts bounding boxes and probabilities for each region. These bounding boxes are weighted by the predicted probabilities.YOLO is popular because it achieves high accuracy while also being able to run in real-time. below you can see yolo network architecture.
 
 <img src="https://miro.medium.com/max/640/0*WUpMWzNu_ymDyHPp.png">
 
-**Generalized Intersection over Union**
+-**Generalized Intersection over Union**
+
 A Metric and A Loss for Bounding Box Regression
 
 The problem IOU metric for detecting bounding boxes is that ,this loss only addressed the overlapped bounding boxes and will not provide any learning for the non-overlapping cases.As you can see in the formulla below:
